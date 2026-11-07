@@ -1,0 +1,83 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Online | Siddarth Bakery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <a href="index.html" class="logo">Siddarth<span> Bakery</span></a>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Our Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a class="active" href="order.html">Order Online</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="page-banner">
+    <h1>Order Your Favourite Treats</h1>
+    <p>Make your celebrations sweeter with us.</p>
+</section>
+
+<section class="section">
+    <div class="form-container">
+        <h2>Place Your Order</h2>
+        <p>Fill in the details below to submit your order enquiry.</p>
+
+        <form id="orderForm">
+
+            <label>Full Name</label>
+            <input type="text" id="customerName" placeholder="Enter your name" required>
+
+            <label>Phone Number</label>
+            <input type="tel" id="phone" placeholder="Enter 10-digit mobile number"
+                   pattern="[6-9][0-9]{9}" required>
+
+            <label>Select Product</label>
+            <select id="product" required>
+                <option value="">Choose a product</option>
+                <option value="Chocolate Cake">Chocolate Cake - ₹550</option>
+                <option value="Strawberry Cake">Strawberry Cake - ₹600</option>
+                <option value="Fresh Bread">Fresh Bread - ₹60</option>
+                <option value="Butter Croissant">Butter Croissant - ₹90</option>
+                <option value="Chocolate Cookies">Chocolate Cookies - ₹120</option>
+                <option value="Cream Dessert">Cream Dessert - ₹100</option>
+            </select>
+
+            <label>Quantity</label>
+            <input type="number" id="quantity" min="1" max="50" value="1" required>
+
+            <label>Delivery Address</label>
+            <textarea id="address" rows="4" placeholder="Enter your address" required></textarea>
+
+            <label>Special Instructions</label>
+            <textarea id="instructions" rows="3" placeholder="Any special requirements?"></textarea>
+
+            <button type="submit" class="btn form-btn">Submit Order Enquiry</button>
+
+        </form>
+
+        <div id="orderMessage"></div>
+    </div>
+</section>
+
+<footer>
+    <h2>Siddarth Bakery</h2>
+    <p>Freshly Baked Happiness, Every Day.</p>
+    <p>© 2026 Siddarth Bakery. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
+```

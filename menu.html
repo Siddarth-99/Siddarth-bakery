@@ -1,0 +1,108 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu | Siddarth Bakery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <a href="index.html" class="logo">Siddarth<span> Bakery</span></a>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="menu.html">Our Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="order.html">Order Online</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="page-banner">
+    <h1>Our Delicious Menu</h1>
+    <p>Freshness and taste in every bite.</p>
+</section>
+
+<section class="section">
+    <div class="section-heading">
+        <p class="subtitle">EXPLORE OUR COLLECTION</p>
+        <h2>Our Bakery Products</h2>
+    </div>
+
+    <div class="filter-buttons">
+        <button class="filter-btn active" onclick="filterProducts('all', this)">All</button>
+        <button class="filter-btn" onclick="filterProducts('cakes', this)">Cakes</button>
+        <button class="filter-btn" onclick="filterProducts('bread', this)">Bread</button>
+        <button class="filter-btn" onclick="filterProducts('pastry', this)">Pastries</button>
+        <button class="filter-btn" onclick="filterProducts('cookies', this)">Cookies</button>
+    </div>
+
+    <div class="product-grid">
+
+        <div class="product-card" data-category="cakes">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=700" alt="Chocolate cake">
+            <h3>Chocolate Cake</h3>
+            <p>Rich chocolate cream cake.</p>
+            <h4>₹550</h4>
+            <a href="order.html" class="small-btn">Order Now</a>
+        </div>
+
+        <div class="product-card" data-category="cakes">
+            <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=700" alt="Strawberry cake">
+            <h3>Strawberry Cake</h3>
+            <p>Fresh strawberry delight.</p>
+            <h4>₹600</h4>
+            <a href="order.html" class="small-btn">Order Now</a>
+        </div>
+
+        <div class="product-card" data-category="bread">
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=700" alt="Bread">
+            <h3>Fresh Bread</h3>
+            <p>Soft and delicious bread.</p>
+            <h4>₹60</h4>
+            <a href="order.html" class="small-btn">Order Now</a>
+        </div>
+
+        <div class="product-card" data-category="pastry">
+            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=700" alt="Croissant">
+            <h3>Butter Croissant</h3>
+            <p>Flaky and buttery pastry.</p>
+            <h4>₹90</h4>
+            <a href="order.html" class="small-btn">Order Now</a>
+        </div>
+
+        <div class="product-card" data-category="cookies">
+            <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=700" alt="Cookies">
+            <h3>Chocolate Cookies</h3>
+            <p>Crunchy chocolate cookies.</p>
+            <h4>₹120</h4>
+            <a href="order.html" class="small-btn">Order Now</a>
+        </div>
+
+        <div class="product-card" data-category="pastry">
+            <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=700" alt="Dessert">
+            <h3>Cream Dessert</h3>
+            <p>Sweet and creamy delight.</p>
+            <h4>₹100</h4>
+            <a href="order.html" class="small-btn">Order Now</a>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <h2>Siddarth Bakery</h2>
+    <p>Freshly Baked Happiness, Every Day.</p>
+    <p>© 2026 Siddarth Bakery. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
+```
